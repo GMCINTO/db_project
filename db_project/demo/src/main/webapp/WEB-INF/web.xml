@@ -1,0 +1,65 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+<web-app>
+  <display-name>demo</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description>UserSearchServlet</description>
+    <servlet-name>UserSearchServlet</servlet-name>
+    <servlet-class>com.example.servlet.UserSearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>AddUserServlet</description>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.example.servlet.AddUserServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>UpdateUserServlet</description>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.example.servlet.UpdateUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>DeleteUserServlet</description>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.example.servlet.DeleteUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserSearchServlet</servlet-name>
+    <url-pattern>/UserSearchServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/addUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/DeleteUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/UpdateUserServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
+
+
+
